@@ -137,3 +137,79 @@ c = math.factorial(a)
 print(c)
 c = math.log(a, 10)
 print(c)
+
+#Boolean True or false 1 or 2(comparison)
+#True not "True" not true
+#False not "false" not false
+
+#Comparison operator
+# > greater than
+# >= greater than or equal
+# < less than
+# <= less than or equal
+# ==equal
+# != not equal
+
+a = 5
+b = 7
+#print( a <= b) = true
+isCorrect = a == b
+#print(isCorrect) = false
+
+#logical operator
+#AND, OR, NOT, NAND, NOR, XOR, XNOR
+
+x = 5
+y = 10
+z = 15
+
+isCorrect = z > y and y > x
+print(isCorrect) #true and true = true
+isCorrect = x > z and y > x
+print(isCorrect) #true and false = false
+
+isCorrect = not(x > z and x > y)
+print("NAND " + str(isCorrect))
+isCorrect = not(z > x and x > y)
+print("NAND " + str(isCorrect))
+
+
+isCorrect = z > y or y > x
+print(isCorrect) #true and true = true
+isCorrect = x > z or y > x
+print(isCorrect) #true and false = true
+
+#XOR
+a = 5
+b = 10
+isCorrect = a != b
+print("XOR " + str(isCorrect))
+
+a = 13
+b = 13
+isCorrect = a != b
+print("XOR " + str(isCorrect))
+
+a = 5
+b = 10
+c = 15
+isCorrect = (a > b) != (c > a)
+print("XOR " + str(isCorrect))
+
+
+#membership
+# in, not in, is, is not
+
+myName = "Bob April"
+yourName = "Bob"
+
+print(myName is yourName)
+print(myName is not yourName)
+
+print(yourName in myName)
+print(yourName not in myName)
+print(myName in yourName)
+
+myFavoriteFruits = ('apple', 'banana', 'orange')
+print("apple" in myFavoriteFruits)
+print("mango" in myFavoriteFruits)
